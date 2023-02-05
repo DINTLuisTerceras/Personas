@@ -8,9 +8,9 @@
         Title="addPerson" Height="120" Width="300" ShowInTaskbar="False" ResizeMode="NoResize" Icon="../assets/Awicons-Vista-Artistic-Search.ico">
     <StackPanel Margin="5">
         <TextBlock>Nacionalidad</TextBlock>
-        <TextBox></TextBox>
+        <TextBox Text="{Binding Path=Nacionalidad}"></TextBox>
         <WrapPanel HorizontalAlignment="Right">
-            <Button Margin="5" Width="100" Click="Button_Click">Aceptar</Button>
+            <Button Margin="5" Width="100" Click="Button_Click" Command="{Binding Path=aceptarNacion}">Aceptar</Button>
             <Button Margin="5" Width="100">Cancelar</Button>
         </WrapPanel>
     </StackPanel>

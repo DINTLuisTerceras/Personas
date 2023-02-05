@@ -11,26 +11,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Personas.ventanas
+namespace Personas.controls
 {
     /// <summary>
-    /// Lógica de interacción para addPerson.xaml
+    /// Lógica de interacción para MostrarSeleccionado.xaml
     /// </summary>
-    public partial class addPerson : Window
+    public partial class MostrarSeleccionado : UserControl
     {
-        addPersonVM vm;
-        public addPerson()
+        MostrarSeleccionadoVM vm;
+        public MostrarSeleccionado()
         {
             InitializeComponent();
-            vm = new addPersonVM();
+            vm = new MostrarSeleccionadoVM();
             this.DataContext = vm;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DialogResult = true;
         }
     }
 }

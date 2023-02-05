@@ -93,14 +93,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controls\MostrarSeleccionado.xaml.cs">
+      <DependentUpon>MostrarSeleccionado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="modelos\Persona.cs" />
+    <Compile Include="modelos\TextRequestMessage.cs" />
     <Compile Include="ventanas\addPerson.xaml.cs">
       <DependentUpon>addPerson.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\addPersonVM.cs" />
     <Compile Include="vistas\listPersonVM.cs" />
+    <Compile Include="vistas\MostrarSeleccionadoVM.cs" />
     <Compile Include="vistas\newPersonVM.cs" />
     <Page Include="controls\listPerson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\MostrarSeleccionado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,6 +159,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Compile Include="modelos\TextoModificadoMessage.cs" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

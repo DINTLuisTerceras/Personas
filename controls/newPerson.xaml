@@ -13,9 +13,9 @@
         <TextBox Margin="5,1,5,0" Text="{Binding Path=Edad}"></TextBox>
         <TextBlock Margin="5,10,5,0">Nacionalidad</TextBlock>
         <WrapPanel>
-            <ComboBox ItemsSource="{Binding Path=Paises}" Width="150" Margin="5,5,0,0" />
+            <ComboBox ItemsSource="{Binding Path=Paises}" SelectedItem="{Binding Path=Pais}" Width="150" Margin="5,5,0,0" />
             <Button Width="20" Margin="5,5,0,0" Command="{Binding Path=OpenAddPerson}" Click="Button_Click">+</Button>
         </WrapPanel>
-        <Button Width="200" Margin="5,5,0,0">Aceptar</Button>
+        <Button Width="200" Margin="5,5,0,0" Command="{Binding Path=Accept_AddToList}">Aceptar</Button>
     </StackPanel>
 </UserControl>
